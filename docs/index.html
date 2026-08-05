@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Ranking Signal Analysis - FlyRank Capstone</title>
     <meta charset="UTF-8">
@@ -20,53 +21,91 @@
         table {
             border-collapse: collapse;
             width: 100%;
+            margin-top: 15px;
         }
 
         td, th {
             border: 1px solid #ccc;
             padding: 8px;
+            text-align: center;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 5px;
+            border-radius: 4px;
         }
     </style>
+
 </head>
 
+
 <body>
+
 
 <h1>Ranking Signal Analysis</h1>
 
 <p>
 <b>Author:</b> Noor Ul Ain<br>
 <b>Lane:</b> Ranking Signal Analysis<br>
+<b>Track:</b> Machine Learning<br>
 <b>Date:</b> 2026-08-05
 </p>
+
+
 
 <h2>Abstract</h2>
 
 <p>
-This project investigates which content-related signals are associated with better ranking performance in the FlyRank ML Internship dataset. The analysis uses anonymized content performance data containing ranking, engagement, traffic, and content features. A Random Forest classification model was applied to identify patterns between ranking signals and performance outcomes. The model achieved strong performance on a client-grouped evaluation split. The output provides ranking signal insights that support content optimization decisions.
+This project investigates which content-related signals are associated with better 
+ranking performance in the FlyRank ML Internship dataset. The analysis uses 
+anonymized content performance data containing ranking, engagement, traffic, and 
+content features. A Random Forest classification model was applied to identify 
+patterns between ranking signals and performance outcomes. The model achieved 
+strong performance on a client-grouped evaluation split. The output provides 
+ranking signal insights that support content optimization decisions.
 </p>
+
+
 
 <h2>Problem Framing</h2>
 
 <p>
-This project analyzes which content signals are associated with better ranking performance. The goal is to provide decision-support insights for ranking and content optimization teams.
+This project analyzes which content signals are associated with better ranking 
+performance. The goal is to provide decision-support insights for ranking and 
+content optimization teams.
 </p>
+
+
 
 <h2>Data</h2>
 
 <p>
 The analysis uses the FlyRank ML Internship dataset:
-data/raw/content_refresh_anonymized.csv
 </p>
+
+<p>
+<code>
+data/raw/content_refresh_anonymized.csv
+</code>
+</p>
+
+
 
 <h2>Methodology</h2>
 
 <p>
-A Random Forest classifier was trained using ranking and engagement-related features. The evaluation used GroupShuffleSplit with client_id grouping to reduce leakage.
+A Random Forest classifier was trained using ranking and engagement-related 
+features. The evaluation used GroupShuffleSplit with client_id grouping to reduce 
+data leakage and provide a more reliable evaluation.
 </p>
+
+
 
 <h2>Results</h2>
 
 <table>
+
 <tr>
 <th>Model</th>
 <th>Accuracy</th>
@@ -74,6 +113,7 @@ A Random Forest classifier was trained using ranking and engagement-related feat
 <th>Recall</th>
 <th>F1 Score</th>
 </tr>
+
 
 <tr>
 <td>Random Forest</td>
@@ -83,22 +123,44 @@ A Random Forest classifier was trained using ranking and engagement-related feat
 <td>1.00</td>
 </tr>
 
+
 </table>
+
+
 
 <h2>Recommendations</h2>
 
 <ul>
-<li>Monitor engagement signals such as CTR and engagement rate.</li>
-<li>Consider ranking position and traffic indicators together.</li>
-<li>Use freshness signals as supporting information.</li>
+
+<li>
+Monitor engagement signals such as CTR and engagement rate.
+</li>
+
+<li>
+Consider ranking position and traffic indicators together.
+</li>
+
+<li>
+Use freshness signals as supporting information for ranking analysis.
+</li>
+
 </ul>
+
+
 
 <h2>Reproducibility</h2>
 
 <p>
 The complete workflow is available in the repository notebook:
-work/notebooks/w05_model.ipynb
 </p>
+
+<p>
+<code>
+work/notebooks/w05_model.ipynb
+</code>
+</p>
+
+
 
 <h2>Acknowledgments</h2>
 
@@ -106,5 +168,7 @@ work/notebooks/w05_model.ipynb
 Built on the FlyRank ML Internship dataset.
 </p>
 
+
 </body>
+
 </html>
