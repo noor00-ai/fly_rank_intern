@@ -2,7 +2,7 @@
 
 **Author:** Noor Ul Ain  
 **Lane:** Ranking Signal Analysis  
-**Repo:** <your GitHub repository link>  
+**Repo:** https://github.com/noor00-ai/fly_rank_intern.git  
 **Date:** 2026-08-05  
 
 > Copy this file to `work/capstone_report.md` and fill it in as you build. Sections 1–8
